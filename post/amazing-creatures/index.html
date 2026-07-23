@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Amazing creatures | Letheii_ik</title>
+<link rel="shortcut icon" href="https://lyiiik0923.github.io/favicon.ico?v=1784821113026">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://lyiiik0923.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Amazing creatures | Letheii_ik - Atom Feed" href="https://lyiiik0923.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="遇到了形形色色的神人。本质都是精致利己。宽于待己严于待人。
+有哑巴，喜欢已读不回。像缩壳乌龟，壳硬得很，用针戳个半天忍无可忍才勉强探出头用鼻孔吐个气。正准备乘胜追击，直接缩水查无此龟。不对，照样在阳光下蹦跳，并不藏着掖着亦或隐秘行踪。只是私..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://lyiiik0923.github.io">
+  <img class="avatar" src="https://lyiiik0923.github.io/images/avatar.png?v=1784821113026" alt="">
+  </a>
+  <h1 class="site-title">
+    Letheii_ik
+  </h1>
+  <p class="site-description">
+    .◦ ·．☆．☾ °* ∴ *° ☆．· ◦．
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://lyiiik0923.github.io" class="menu">
+          index
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          about
+        </a>
+      
+    
+      
+        <a href="https://lyiiik0923.github.io/post/mono" class="menu">
+          mono
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Amazing creatures
+            </h2>
+            <div class="post-info">
+              <span>
+                2025-12-08
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>遇到了形形色色的神人。本质都是精致利己。宽于待己严于待人。<br>
+<br>有哑巴，喜欢已读不回。像缩壳乌龟，壳硬得很，用针戳个半天忍无可忍才勉强探出头用鼻孔吐个气。正准备乘胜追击，直接缩水查无此龟。不对，照样在阳光下蹦跳，并不藏着掖着亦或隐秘行踪。只是私底下比较恶心，阴冷残酷，将 <u>冰之呼吸·冷暴力</u> 炼化至炉火纯青！<br>
+<br><br>
+<br><br>
+<br>已经无喜也无悲。<br>
+<br><br>
+这个冬天没有很冷，但是我却觉得这里很冷。<br>
+<br>不过有的时候只是因为还没吃饭。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://lyiiik0923.github.io/post/reversal/">
+              <h3 class="post-title">
+                reversal&gt;
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+   <a href="https://github.com/getgridea/gridea" target="_blank">×</a>
+  <a class="rss" href="https://lyiiik0923.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
